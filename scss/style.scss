@@ -879,7 +879,7 @@ section {
     }
 
     & a {
-      display: block;
+      display: inline-block;
       margin-bottom: 2rem;
       font-size: 1.7rem;
       @include bold;
@@ -932,8 +932,8 @@ footer {
 
 
 //modal
-
-.popup {
+//callback
+.popup, .popup-prices {
   display: none;
   position: fixed;
   left: 0;
@@ -952,7 +952,7 @@ footer {
     top: 10%;
     background-color: #fff;
     transform: translateX(-50%);
-    padding: 3rem 8rem;
+    padding: 3rem 6rem;
 
     & p {
       font-size: 1.6rem;
@@ -984,6 +984,7 @@ footer {
     }
 
     & label {
+      position: relative;
       margin-top: 2rem;
       margin-bottom: 0;
       font-size: 1.5rem;
@@ -999,7 +1000,7 @@ footer {
       margin: 0 auto 1rem;
       border: 1px solid $navText;
       border-radius: 5px;
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding-left: .5rem;
     }
 
@@ -1011,6 +1012,46 @@ footer {
     }
   }
 }
+
+//prices
+
+.popup-prices {
+  &-content {
+    padding: 3rem 4rem;
+  }
+  &-form {
+    &-block {
+      display: inline-block;
+    }
+    & select {
+      width: 80%;
+      margin: 0 auto 1rem;
+      border: 1px solid $navText;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      padding-left: .5rem;
+    }
+  }
+}
+
+
+#toTop {
+  display: none;
+  position:fixed;
+  width: 5rem;
+  height: 5rem;
+  bottom:5rem;
+  right: 10rem;
+  background-image: url('../img/arrow-pointing-to-right.svg');
+  cursor:pointer;
+}
+
+input {
+  &:valid {
+    border: 1px solid green;
+  }
+}
+
 
 //media------------------------------
 
@@ -1035,6 +1076,9 @@ footer {
   .footer-logo {
     display: block;
     margin: 0 auto 1rem;
+  }
+  #toTop {
+    right: 5rem;
   }
 }
 
