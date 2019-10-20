@@ -108,15 +108,15 @@ $(function () {
   {
     $('.prices-slider-btn-2')
       .on('click', () => {
-        $('.popup-prices').css('display', 'block');
+        $('#popup-prices').css('display', 'block');
       });
     $('.popup-close').on('click', () => {
-      $('.popup-prices').css('display', 'none');
+      $('#popup-prices').css('display', 'none');
     });
+
+    $('#prices-country').val('Ukraine');
+
   }
-
-
-  $('#prices-country').val('Ukraine');
   //response menu buttons
   {
     const responseOn = $('.response-menu-trigger');

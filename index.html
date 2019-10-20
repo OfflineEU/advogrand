@@ -529,7 +529,7 @@
 			<input id="info-phone" type="text">
 			<label for="info-message">Сообщение или вопрос</label>
 			<textarea id="info-message" rows="3"></textarea>
-			<button class="button info-form-button" type="button">Заказать звонок консультанта</button>
+			<button class="button info-form-button">Заказать звонок консультанта</button>
 			<p class="info-form-button-description">Перезвоним вам в течении 5 минут</p>
 		</form>
 	</div>
@@ -579,10 +579,10 @@
 					<label for="popup-name">Ваше имя</label>
 					<input class='popup-form-input' id="popup-name" maxlength="12" minlength="3" required type="text">
 					<label for="popup-phone">Номер телефона</label>
-					<input class='popup-form-input' id="popup-phone" required type="text">
+					<input class='popup-form-input' id="popup-phone" required type="tel">
 					<label for="popup-message">Сообщение</label>
 					<textarea class='popup-form-input' id="popup-message" required rows="5"></textarea>
-					<button class="button popup-form-btn">Оставьте заявку</button>
+					<button class="button popup-form-btn" type="submit">Оставьте заявку</button>
 				</form>
 			</div>
 		</div>
@@ -590,7 +590,7 @@
 </div>
 
 <!--Prices-->
-<div class="popup-prices">
+<div class="popup-prices" id="popup-prices">
 	<div class="popup-dialog">
 		<div class="popup-prices-content">
 			<button class="popup-close">&times;</button>
@@ -613,7 +613,7 @@
 					<input class='popup-form-input' id="popup-email-prices" required type="email">
 
 					<label for="popup-phone-prices">Номер телефона</label>
-					<input class='popup-form-input' id="popup-phone-prices" required type="text">
+					<input class='popup-form-input' id="popup-phone-prices" required type="tel">
 
 					<label for="prices-country">Страна</label>
 					<select class="form-control" id="prices-country" name="country" required>
@@ -868,7 +868,7 @@
 					<label for="popup-city-prices">Город</label>
 					<input class='popup-form-input' id="popup-city-prices" required type="text">
 
-					<button class="button popup-form-btn">Оставьте заявку</button>
+					<button class="button popup-form-btn" type="submit">Оставьте заявку</button>
 				</form>
 			</div>
 		</div>
