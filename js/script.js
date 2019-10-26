@@ -96,7 +96,7 @@ $(function () {
   }
   //modal callback
   {
-    $('.navbar-btn, .main-btn, .compare-counter-btn, .info-form-button, .prices-slider-btn-1-1, .prices-slider-btn-1-2, .prices-slider-btn-1-3')
+    $('.navbar-btn, .main-btn, .compare-counter-btn, .prices-slider-btn-1-1, .prices-slider-btn-1-2, .prices-slider-btn-1-3')
       .on('click', () => {
         $('#popup').css('display', 'block');
       });

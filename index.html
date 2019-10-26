@@ -524,9 +524,9 @@
 		<form class="info-form">
 			<h3 class="info-form-title">Напишите нам письмо или задайте свой вопрос</h3>
 			<label for="info-name">Введите своё имя</label>
-			<input id="info-name" type="text">
+			<input id="info-name" maxlength="12" minlength="3" required type="text">
 			<label for="info-phone">Ваш номер телефона</label>
-			<input id="info-phone" type="text">
+			<input id="info-phone" required type="text">
 			<label for="info-message">Сообщение или вопрос</label>
 			<textarea id="info-message" rows="3"></textarea>
 			<button class="button info-form-button">Заказать звонок консультанта</button>

@@ -964,12 +964,22 @@ footer {
     position: absolute;
     top: -2.5rem;
     right: -2rem;
-    width: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 1rem;
     border: none;
     text-align: center;
     background-color: transparent;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    &:hover {
+      color: $textHover;
+    }
   }
 
   &-header {
@@ -1047,6 +1057,9 @@ footer {
 }
 
 input {
+  &:invalid {
+    border: 1px solid #ccc;
+  }
   &:valid {
     border: 1px solid green;
   }

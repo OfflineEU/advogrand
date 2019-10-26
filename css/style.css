@@ -611,12 +611,21 @@ footer {
     position: absolute;
     top: -2.5rem;
     right: -2rem;
-    width: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 1rem;
     border: none;
     text-align: center;
     background-color: transparent;
-    font-size: 4rem;
-    color: #fff; }
+    font-size: 3rem;
+    color: #fff;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s; }
+    .popup-close:hover, .popup-prices-close:hover {
+      color: #e42626; }
   .popup-header, .popup-prices-header {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -666,6 +675,8 @@ footer {
   background-image: url("../img/arrow-pointing-to-right.svg");
   cursor: pointer; }
 
+input:invalid {
+  border: 1px solid #ccc; }
 input:valid {
   border: 1px solid green; }
 
