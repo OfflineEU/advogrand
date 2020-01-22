@@ -887,7 +887,7 @@ input:valid {
     text-align: center; }
     .header-phone {
       display: block;
-      padding: 0 auto;
+      padding: 0;
       margin: 0; }
 
   .main-title {
@@ -941,14 +941,14 @@ input:valid {
     width: 60%; }
 
   .prev {
-    left: 4rem;
+    left: 5%;
     width: 5rem;
     height: 3rem; }
     .prev-prices {
       left: -6rem; }
 
   .next {
-    right: 4rem;
+    right: 5%;
     width: 5rem;
     height: 3rem; }
     .next-prices {

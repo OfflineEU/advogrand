@@ -1363,7 +1363,7 @@ input {
 
     &-phone {
       display: block;
-      padding: 0 auto;
+      padding: 0;
       margin: 0;
     }
   }
@@ -1446,7 +1446,7 @@ input {
     width: 60%;
   }
   .prev {
-    left: 4rem;
+    left: 5%;
     width: 5rem;
     height: 3rem;
 
@@ -1455,7 +1455,7 @@ input {
     }
   }
   .next {
-    right: 4rem;
+    right: 5%;
     width: 5rem;
     height: 3rem;
 
